@@ -20,4 +20,5 @@ The dataset used in this repository can be downloaded [Here](https://drive.googl
 ## Part 2
 The dataset used in this repository can be downloaded [Here](https://drive.google.com/file/d/1npkPA-BdiGELHfBrUOcpqumjbQTspg9p/view)
 + Implement Metrics to Evaluate Ranking System: Average Precision and NDCG (Normalised Discounted Cumulative Gain)
++ Word Embedding use Python Spacy pre-trained model "en_core_web_md"
 + Implement Advance Models to score the relevancy of each pair of query and passage to rank the passages. These models include: - Logistic Regression; - LambdaMART, -Neural Netword Model (Tensorflow or PyTorch).
