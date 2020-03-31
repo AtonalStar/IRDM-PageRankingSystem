@@ -1,0 +1,17 @@
+BM25:
+Mean average precision for BM25 = 0.055
+Mean NDCG@100 for BM25 = 0.117
+
+
+LR: train_data (2310000 - 2320000)
+learning rate: 0.001
+Mean average precision for LR = 0.014
+Mean NDCG@100 for LR = 0.041
+
+learning rate: 0.002
+Mean average precision for LR = 0.015
+Mean NDCG@100 for LR = 0.043
+
+learning rate: 0.003
+Mean average precision for LR = 0.014
+Mean NDCG@100 for LR = 0.04
