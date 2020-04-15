@@ -71,9 +71,9 @@ class Inverted_index:
 start = datetime.datetime.now()
 queries = pd.read_csv("all_queries.tsv", delimiter='\t', header=None, encoding='utf-8')
 # clear the old file
-BMFile = open("../BM25.txt", "w", encoding='utf-8').close()
+BMFile = open("BM25.txt", "w", encoding='utf-8').close()
 # create files to write
-BMFile = open("../BM25.txt", "a", encoding='utf-8')
+BMFile = open("BM25.txt", "a", encoding='utf-8')
 # stopwords are articles, be and pronouns (totally 46 words)
 stopWords = {u'a', u'an', u'the', u'be', u'been', u'am', u'is', u'are', u'was', u'were', u'isnt', u'arent', u'wasnt',
              u'werent', u'i', u'me', u'my', u'myself', u'you', u'your', u'yours', u'yourself', u'yourselves', u'we',

@@ -1,0 +1,83 @@
+﻿BM25:
+Mean average precision for BM25 = 0.055
+Mean NDCG@100 for BM25 = 0.117
+=======================================================================================
+
+LR: train_data (2310000 - 2320000)
+[LR001.txt]
+learning rate: 0.001
+Mean average precision for LR = 0.014
+Mean NDCG@100 for LR = 0.041
+------------------------------------------
+[LR002.txt]
+learning rate: 0.002
+Mean average precision for LR = 0.015
+Mean NDCG@100 for LR = 0.043
+------------------------------------------
+[LR003.txt]
+learning rate: 0.003
+Mean average precision for LR = 0.014
+Mean NDCG@100 for LR = 0.04
+=======================================================================================
+
+LM: train_data (2310000 - 2320000)
+[xgb1.json, LM-1.txt]
+params1 = {'max_depth': 6, 'min_child_weight': 1, 'gamma': 0, 'eta': 0.3, 
+'objective':'rank:ndcg'}
+xgb.train(params1, train_data, num_boost_round=6)
+Mean average precision for LM = 0.012
+Mean NDCG@100 for LM = 0.026
+---------------------------------------------------------------------------------------------------
+[xgb2.json, LM-2.txt]
+params2 = {'max_depth': 6, 'min_child_weight': 1, 'gamma': 0, 'eta': 0.03, 
+'objective':'rank:ndcg'}
+xgb.train(params2, train_data, num_boost_round=60)
+Mean average precision for LM = 0.013
+Mean NDCG@100 for LM = 0.031
+---------------------------------------------------------------------------------------------------
+[xgb3.json, LM-3.txt]
+params3 = {'max_depth': 6, 'min_child_weight': 1, 'gamma': 0, 'eta': 0.003, 
+'objective':'rank:ndcg'}
+xgb.train(params3, train_data, num_boost_round=600)
+Mean average precision for LM = 0.013
+Mean NDCG@100 for LM = 0.03
+-----------------------------------------------------------------------------------------------------
+[xgb4.json, LM-4.txt]
+params4 = {'max_depth': 6, 'min_child_weight': 1, 'gamma': 0, 'eta': 0.3, 
+'subsample': 0.7, 'colsample_bytree': 0.7, 'objective':'rank:ndcg'}
+xgb.train(params3, train_data, num_boost_round=10)
+Mean average precision for LM = 0.01
+Mean NDCG@100 for LM = 0.026
+=========================================================================================
+
+NN： train_data (2310000 - 2320000)
+[NN.txt, model: nn.pkl]
+Model output:
+NN(
+  (hidden1): Linear(in_features=600, out_features=256, bias=True)
+  (hidden2): Linear(in_features=256, out_features=64, bias=True)
+  (out): Linear(in_features=64, out_features=2, bias=True)
+)
+
+optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+The average loss of epoch 1 is 0.06606514006853104;
+The average loss of epoch 2 is 0.06336424499750137;
+The average loss of epoch 3 is 0.05782531574368477;
+The average loss of epoch 4 is 0.05411938950419426;
+The average loss of epoch 5 is 0.05396563559770584;
+The average loss of epoch 6 is 0.050050217658281326;
+The average loss of epoch 7 is 0.04175041615962982;
+The average loss of epoch 8 is 0.036155857145786285;
+The average loss of epoch 9 is 0.03293595090508461;
+The average loss of epoch 10 is 0.029262429103255272;
+The average loss of epoch 11 is 0.028288599103689194;
+The average loss of epoch 12 is 0.021688155829906464;
+The average loss of epoch 13 is 0.019427336752414703;
+The average loss of epoch 14 is 0.02079233154654503;
+The average loss of epoch 15 is 0.017584508284926414;
+
+Mean average precision for NN = 0.009
+Mean NDCG@100 for NN = 0.025
+==========================================================================================
+
+

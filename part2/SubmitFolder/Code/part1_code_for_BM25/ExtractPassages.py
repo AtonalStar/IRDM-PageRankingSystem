@@ -20,6 +20,7 @@ candidateDict = {}
 # arrange passages by query in a (qid : (pid - passage)) dictionary
 qcols = [0, 2]
 query = query_candidate[qcols].drop_duplicates().values.tolist()
+# sort queries by qid in ascending order
 query = sorted(query, key=lambda x: x[0])
 # pid - passage
 pcols = [1, 3]
