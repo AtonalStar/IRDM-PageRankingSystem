@@ -24,18 +24,18 @@ The dataset used in this repository can be downloaded [Here](https://drive.googl
 	 ├── IRDM_Course_Project_Part_1_Report.pdf
 	 ├── Code	  
 	 │     ├── dataset (Empty)
-	 │	   │	   ├── candidate_passages_top1000.tsv
-	 │	   │	   ├── passage_collection.txt
-	 │	   │	   └── test-queries.tsv
+	 │     │	   ├── candidate_passages_top1000.tsv
+	 │     │	   ├── passage_collection.txt
+	 │     │	   └── test-queries.tsv
 	 │     ├── Inverted=Index
-	 │	   │	   ├── ExtractPassages. py
-	 │	   │	   └── inverted_index. py
+	 │     │	   ├── ExtractPassages. py
+	 │     │	   └── inverted_index. py
 	 │     ├── invertedResult
-	 │	   ├── Models
-	 │	   │	   └── models. py
-	 │	   ├── Text-Statistics
-	 │	   │	   └── preProcess. py
-	 │	   └── README.txt
+	 │     ├── Models
+	 │     │     └── models. py
+	 │     ├── Text-Statistics
+	 │     │	   └── preProcess. py
+	 │     └── README.txt
 	 ├── BM25.txt
 	 └── VS.txt
 ```
@@ -49,49 +49,49 @@ The dataset used in this repository can be downloaded [Here](https://drive.googl
 └──SubmitFolder
 	  ├── IRDM Course Project Part 2 Report.pdf
 	  ├── Code
-	  │	    ├── part1_code_for_BM25
-	  │		│		    ├── Passages (For the output of extracted passages)
-	  │	    │    		├── ExtractPassages. py
-	  │		│		    ├── generateBM25. py
-	  │		│		    └──BM25.txt
+	  │	├── part1_code_for_BM25
+	  │	│  	    ├── Passages (For the output of extracted passages)
+	  │	│           ├── ExtractPassages. py
+	  │	│	    ├── generateBM25. py
+	  │	│	    └──BM25.txt
 	  │     ├── all_queries.tsv
 	  │     ├── Metrics. py
 	  │     ├── ModelsEvaluation. py
-	  │		├── train_data_line_extract.py
-	  │		├── train_data_line_1.txt
-	  │		├── validList.txt (Number of valid(1.0) items per 10000 lines)
-	  │		├── Embed. py
-	  │		├── embed10000.tsv (Embedding of 2310000 - 2320000 train_data)[Generate from Embed. py]
+	  │	│	├── train_data_line_extract.py
+	  │	│	├── train_data_line_1.txt
+	  │	│	├── validList.txt (Number of valid(1.0) items per 10000 lines)
+	  │	│	├── Embed. py
+	  │	│	└── embed10000.tsv (Embedding of 2310000 - 2320000 train_data)[Generate from Embed. py]
 	  │     ├── LR
-	  │    	│	 ├── LogisticRegression. py
+	  │    	│    ├── LogisticRegression. py
 	  │     │    ├── generateLR. py
 	  │     │    ├── LRWeight_10000.txt
 	  │     │    ├── LR001.txt
 	  │     │    ├── LR002.txt (LR.txt)
 	  │     │    └── LR003.txt
 	  │     ├── LM
-	  │		│	 ├── LambdaMART. py
-	  │		│	 ├── generateLM. py
-	  │		│	 ├── xgb1.json
-	  │		│	 ├── xgb2.json
-	  │		│	 ├── xgb3json
-	  │		│	 ├── xgb4json
-	  │		│	 ├── LM-1.txt
-	  │		│	 ├── LM-2.txt (LM.txt)
-	  │		│	 ├── LM-3.txt
-	  │     │	 └── LM-4.txt 
+	  │	│    ├── LambdaMART. py
+	  │	│    ├── generateLM. py
+	  │	│    ├── xgb1.json
+	  │	│    ├── xgb2.json
+	  │	│    ├── xgb3json
+	  │	│    ├── xgb4json
+	  │	│    ├── LM-1.txt
+	  │	│    ├── LM-2.txt (LM.txt)
+	  │	│    ├── LM-3.txt
+	  │     │    └── LM-4.txt 
 	  │     └── NN
-	  │			 ├── NNmodel. py
-	  │			 ├── genNN. py
-	  │			 ├── nn.pkl
-	  │			 └── NN.txt
+	  │	     ├── NNmodel. py
+	  │    	     ├── genNN. py
+	  │	     ├── nn.pkl
+	  │	     └── NN.txt
 	  ├── part2 (Too large to be submitted, so it's empty)
 	  │     ├── train_data.tsv
 	  │     └── validation_data.tsv
 	  ├── Test Results				 
-	  │	         ├── LR.txt
-	  │	         ├── LM.txt
-	  │	         └── NN.txt
+	  │	     ├── LR.txt
+	  │	     ├── LM.txt
+	  │	     └── NN.txt
 	  └── EvaluationResults.txt
 
 ```
